@@ -1,5 +1,5 @@
 FROM ubuntu
 
-CMD echo "hello worlddd"
+CMD echo "hello worldddd"
 
 
