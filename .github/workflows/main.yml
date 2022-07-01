@@ -24,11 +24,11 @@ jobs:
           # - results-dir/results.json
           # - results-dir/results.sarif
           output_path: results-dir
-          platform_type: docker
+          # platform_type: docker
           output_formats: 'json,sarif'
           exclude_paths: ""
           # seek query id in it's metadata.json
-          exclude_queries: 0437633b-daa6-4bbc-8526-c0d2443b946e
+          # exclude_queries: 0437633b-daa6-4bbc-8526-c0d2443b946e
       - name: Show results
         run: |
           cat results-dir/results.sarif
