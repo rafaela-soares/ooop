@@ -11,9 +11,9 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
-      - name: Mkdir results-dir
+      # - name: Mkdir results-dir
         # make sure results dir is created
-        run: mkdir -p results-dir
+       # run: mkdir -p results-dir
       - name: Run KICS Scan with SARIF result
         uses: checkmarx/kics-github-action@v1.5
         with:
@@ -23,12 +23,12 @@ jobs:
           # in this example it will generate:
           # - results-dir/results.json
           # - results-dir/results.sarif
-          output_path: results-dir
-          platform_type: Dockerfile
-          output_formats: 'json,sarif'
-          exclude_paths: ""
+          output_path: results-dir/
+          #platform_type: Dockerfile
+          #output_formats: 'json,sarif'
+          #exclude_paths: ""
           # seek query id in it's metadata.json
-          exclude_queries: 0437633b-daa6-4bbc-8526-c0d2443b946e
+          #exclude_queries: 0437633b-daa6-4bbc-8526-c0d2443b946e
       - name: Show results
         run: |
           # cat results-dir/results.sarif
