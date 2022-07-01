@@ -24,7 +24,7 @@ jobs:
           # - results-dir/results.json
           # - results-dir/results.sarif
           output_path: results-dir
-          platform_type: docker
+          platform_type: Dockerfile
           output_formats: 'json,sarif'
           exclude_paths: ""
           # seek query id in it's metadata.json
