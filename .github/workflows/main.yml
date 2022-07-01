@@ -31,9 +31,9 @@ jobs:
           exclude_queries: 0437633b-daa6-4bbc-8526-c0d2443b946e
       - name: Show results
         run: |
-          cat results-dir/results.sarif
+          # cat results-dir/results.sarif
           cat results-dir/results.json
-      - name: Upload SARIF file
-        uses: github/codeql-action/upload-sarif@v1
-        with:
-          sarif_file: results-dir/results.sarif
+      #- name: Upload SARIF file
+       # uses: github/codeql-action/upload-sarif@v1
+        #with:
+          #sarif_file: results-dir/results.sarif
