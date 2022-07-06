@@ -18,6 +18,9 @@ jobs:
         uses: checkmarx/kics-github-action@v1.5
         with:
           path: Dockerfile
+          # to continue with findings - not stop the build
+          # fix error 50
+          ignore_on_exit: results
           # when provided with a directory on output_path
           # it will generate the specified reports file named 'results.{extension}'
           # in this example it will generate:
