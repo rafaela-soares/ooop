@@ -3,6 +3,8 @@ name: scan with KICS and upload SARIF
 on:
   pull_request:
     branches: [main]
+  push:
+    branches: [main]
 
 jobs:
   kics-job:
