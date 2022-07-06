@@ -18,6 +18,8 @@ jobs:
         uses: checkmarx/kics-github-action@v1.5
         with:
           path: 'Dockerfile'
+          #to ignore if you have results - not break the execution
+          ignore_on_exit: results
           # when provided with a directory on output_path
           # it will generate the specified reports file named 'results.{extension}'
           # in this example it will generate:
